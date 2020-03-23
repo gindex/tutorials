@@ -16,10 +16,8 @@ public class OrderService {
     public void createOrder(Order order) {
         //create order
 
-        String message = MessageFormat.format("Created new order with id `{0}` for `{1}` items.", order.getId(),
-          order.getProductOrders().size());
+        String message = MessageFormat.format("Created new order with id `{0}`.", order.getId());
 
         notificationService.sendNotification(order.getCustomer(), message);
     }
-
 }

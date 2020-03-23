@@ -7,6 +7,6 @@ public class SmsNotificationService implements NotificationService {
 
     @Override
     public void sendNotification(Customer customer, String message) {
-        //send notification
+        //send sms notification
     }
 }
